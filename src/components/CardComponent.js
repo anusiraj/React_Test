@@ -14,7 +14,7 @@ const Card = (props) => {
                             <h5 className='card_title'>{props.title}</h5> 
                             <p className='card_subtitle'>{props.subtitle}</p>
                             <p className='card_description'>
-                                <a href="#">{props.description}</a>
+                                <a href="https://reactjs.org/docs/create-a-new-react-app.html">{props.description}</a>
                             </p>
                             <Button onClick={() => props.onClick()}/>
                         </div>
