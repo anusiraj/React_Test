@@ -17,7 +17,7 @@ function Home() {
             console.log('******data******* ', data);
             setUsers(data);
         }
-        const users = fetchUsers();
+        fetchUsers();
       }, []);
 
     const onButtonClick = (user) => {
@@ -29,7 +29,7 @@ function Home() {
             <div className='row' style={{marginBottom: 30}} >
             {
                 users.map((user) => {
-                    const {name,username,website, id} = user;
+                    const {name,username,website} = user;
                     const usernameat = '@'+username;
                     var str = name
                     var firstStringChar = str.charAt(0);

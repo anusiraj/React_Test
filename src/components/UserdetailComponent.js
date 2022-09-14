@@ -17,8 +17,8 @@ function Userdetail() {
             console.log('******data******* ', data);
             setUser(data);
         }
-        const user = fetchUserDetails();
-    }, []);
+        fetchUserDetails();
+    }, [params.id]);
 
     if(user !== null) {
         return(
