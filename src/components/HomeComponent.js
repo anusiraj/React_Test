@@ -31,8 +31,7 @@ function Home() {
                 users.map((user) => {
                     const {name,username,website} = user;
                     const usernameat = '@'+username;
-                    var str = name
-                    var firstStringChar = str.charAt(0);
+                    const firstStringChar = name.charAt(0);
                     return(
                             <div  className="col-sm">
                                 <Card 
